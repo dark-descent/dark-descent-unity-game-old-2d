@@ -8,6 +8,7 @@ public class BasePlatformBuilder : MonoBehaviour
 	[SerializeField] Sprite leftSprite;
 	[SerializeField] Sprite midSprite;
 	[SerializeField] Sprite rightSprite;
+	[SerializeField] Sprite asdkasjdkasjdkasd;
 
 	[SerializeField] int width = 1;
 	int prevWidth = 0;
