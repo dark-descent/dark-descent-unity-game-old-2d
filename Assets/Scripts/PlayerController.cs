@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviour
 	AudioSource ambientAudioSource;
 	AudioSource jumpAudioSource;
 
+	Animator anim;
+
 	void setFlipped(bool isFlipped)
 	{
 		foreach (var r in spriteRenderers)
@@ -63,6 +65,7 @@ public class PlayerController : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		GetComponentsInChildren<SpriteRenderer>(spriteRenderers);
 		playerLight = GetComponent<Light2D>();
+		anim = GetComponent<Animator>();
 
 		ambientAudioSource = gameObject.AddComponent<AudioSource>();
 		ambientAudioSource.volume = ambientVolume;
@@ -79,6 +82,15 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
+		if(Input.GetKey(KeyCode.LeftAlt))
+		{
+			anim.SetBool("isHolding", true);
+		}
+		else
+		{
+			anim.SetBool("isHolding", false);
+		}
+
 		if (Mathf.Round(Random.Range(0f, lightChangeChance)) == 0)
 		{
 			Color c = playerLight.color;

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6759107924608204675}
   - component: {fileID: 6885562108433180488}
   - component: {fileID: 8672957835758377304}
-  - component: {fileID: 2006664072831395518}
   - component: {fileID: 1356760229}
   - component: {fileID: 2006664073628180176}
+  - component: {fileID: 2006664072831395518}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -178,6 +178,42 @@ PolygonCollider2D:
       - {x: -0.035814315, y: -0.15021771}
       - {x: 0.026613891, y: -0.15015143}
       - {x: 0.032307178, y: -0.14348716}
+--- !u!95 &1356760229
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006664072831395517}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a10e7742f6caabfe7a7823efb9917f3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2006664073628180176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006664072831395517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 751ee4c09cc7049b88cf8b7e1f2be39e, type: 2}
 --- !u!114 &2006664072831395518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,42 +253,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8333b5695ada4e0ef8182376e460ec7b, type: 3}
   - {fileID: 8300000, guid: c712348f4523f0d3386f6cec3e56df90, type: 3}
   jumpAudioVolume: 0.4
---- !u!95 &1356760229
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006664072831395517}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a10e7742f6caabfe7a7823efb9917f3d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2006664073628180176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006664072831395517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 751ee4c09cc7049b88cf8b7e1f2be39e, type: 2}
 --- !u!1 &2006664073455299433
 GameObject:
   m_ObjectHideFlags: 0
