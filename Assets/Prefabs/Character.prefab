@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 6885562108433180488}
   - component: {fileID: 8672957835758377304}
   - component: {fileID: 1356760229}
-  - component: {fileID: 2006664073628180176}
   - component: {fileID: 2006664072831395518}
   m_Layer: 0
   m_Name: Character
@@ -197,23 +196,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2006664073628180176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006664072831395517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 751ee4c09cc7049b88cf8b7e1f2be39e, type: 2}
 --- !u!114 &2006664072831395518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +245,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2006664073455299432}
   - component: {fileID: 2006664073455299435}
-  - component: {fileID: 2006664073628180177}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -304,7 +285,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6016281ec16508701a63341c687fd25a, type: 2}
+  - {fileID: 2100000, guid: 26ac22b948b42a7239014d7f93139be9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -336,19 +317,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2006664073628180177
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006664073455299433}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.091863126, y: 0.069594264, z: 0.2}
-  m_Center: {x: 0.01406844, y: 0.06916988, z: 0}
 --- !u!1 &2006664073560494002
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,7 +484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9119500947872613563}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17, y: 0.001, z: 0}
+  m_LocalPosition: {x: 0, y: 0.001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2006664072831395516}
